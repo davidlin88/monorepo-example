@@ -7,7 +7,9 @@
   "changelog": {
     "repo": "davidlin88/monorepo-example",
     "labels": {
-      "PR: Bug Fix": ":bug: Bug Fix"
+      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: New Feature": ":rocket: New Features",
+      "PR: Documentation": ":memo: Documentation"
     },
     "cacheDir": ".changelog"
   }
