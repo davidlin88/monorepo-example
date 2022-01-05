@@ -1,30 +1,26 @@
 {
-  "command": {
-    "publish": {
-      "tempTag": true
-    },
-    "version": {
-      "allowBranch": "main",
-      "conventionalCommits": true,
-      "createRelease": "github",
-      "exact": true,
-      "message": "chore(release): %s"
-    },
-    "packages": [
-      "packages/*"
-    ],
-    "changelog": {
-      "repo": "davidlin88/monorepo-example",
-      "labels": {
-        "PR: Bug Fix": ":bug: Bug Fix",
-        "PR: New Feature": ":rocket: New Features",
-        "PR: Documentation": ":memo: Documentation"
-      },
-      "cacheDir": ".changelog"
-    }
-  },
+  "lerna": "2.0.0-beta.31",
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.4"
+  "version": "0.0.4",
+  "changelog": {
+    "repo": "davidlin88/monorepo-example",
+    "labels": {
+      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: New Feature": ":rocket: New Features",
+      "PR: Documentation": ":memo: Documentation"
+    },
+    "cacheDir": ".changelog"
+  },
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "verifyAccess": false,
+      "verifyRegistry": false,
+      "message": "chore(release): publish"
+    }
+  }
 }
