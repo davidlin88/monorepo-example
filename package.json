@@ -3,5 +3,6 @@
     "lerna": "^4.0.0",
     "lerna-changelog": "^2.2.0"
   },
-  "name": "monorepo-example"
+  "name": "monorepo-example",
+  "version": "0.1.2"
 }
